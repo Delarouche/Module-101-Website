@@ -1,0 +1,262 @@
+
+html{  scroll-behavior: smooth;}
+/*Header*/
+div.ContentHeader{                      margin: 20vh 0 20vh 10%;
+                                        height: 65vh;
+                                        scroll-behavior: smooth;}
+div.ContentHeader img{                  height: 45vh;
+                                        float: left;
+                                        
+                                        
+                                        transition-property:  height, margin-top;
+                                        transition-duration: 1s;}
+.ContentHeader img:hover{               height: 70vh;
+                                        margin-top: -10vh;
+                                        vertical-align: middle;
+  
+ }
+
+
+/* Parallax
+.parallax {
+    scroll-behavior: smooth;
+    perspective: 10px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+   
+  }
+
+ 
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+  }
+ 
+  .parallax__layer--deep {
+    transform: translateZ(-3px) scale(1);
+    width: 100vw;}
+  
+  
+  
+ 
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: relative;
+    top: 50vh;
+    left: 20vw;
+    height: 150vh;
+    
+    
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-3px) scale(2);
+    transform: translateZ(-3px) scale(2);
+    height: 35vh;
+    /*position: relative;
+    top: 70vh;
+    left: 85vw;
+  }
+  .parallax__layer--back img{ margin: 50vh;
+  }*/
+div.BackgroundContent{
+                      height: 100vh;
+                      width: 20vw;
+                      float: left;
+                      scroll-behavior: smooth;}
+/*Contetn Header Layout*/
+#Wheels h1{              font-family: 'Source Code Pro','Open Sans' sans-serif; 
+                        font-size: 1.8em}
+/* Content Sliders
+*/
+  .slider {
+    scroll-behavior: smooth;
+    float: left;
+    width: 25vw;
+    height: 70vh;
+    display: flex;
+    overflow-x: auto;
+    -webkit-scroll-snap-points-x: repeat(300px);
+    -ms-scroll-snap-points-x: repeat(300px);
+    scroll-snap-points-x: repeat(300px);
+    -webkit-scroll-snap-type: mandatory;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+  
+  }
+  .slide {
+    width: 50vh;
+    flex-shrink: 0;
+    height: 100%;
+    background-color: rgba(219, 20, 20, 0.5);
+  }
+  /*Slider navigation*/
+  div.slidebuttonleft,
+  div.slidebuttonright{width: 3vw;
+    height: 5vh;
+    float: left;}
+  .slidebuttonleft img{ 
+                        width: 3vw;
+                        height: 5vh;
+                        float: left;
+                       
+                        
+                       }
+  .slidebuttonright img{   
+                        width: 3vw;
+                        height: 5vh;
+                        float: left;
+                       
+                        
+                        }
+  .slideContent{       
+                        width: 60%;
+                        height:70vh;
+                        padding: 15vh 0 0 5vw;
+                        margin-bottom: 0;
+                        }
+
+ /* Scrollbar fix
+ */                  
+.parallax::-webkit-scrollbar, 
+.slider::-webkit-scrollbar
+                        { display: none;
+}
+/*spacer*/
+div.spacer{ height: 150vh;
+            background-color: green;
+            }
+/*Tracks site layout*/
+/*Full background layout*/
+div.fullbackground{ height: 100vh;
+                    width: auto;
+background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Continents.svg/2000px-Continents.svg.png") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;}
+/* text layout*/
+div.Tracktext{
+                position: relative;
+                left: 0;
+                color: red;}
+
+/*Animations and effects*/
+div.Nürburgring{  width: 2vw;
+                  height: 2vw;
+                  position: relative;
+                  left: 47%;
+                  top:17%;
+                  overflow: hidden;
+                  transition: 2.5s ease;}
+div.Nürburgring:hover {width: 50vw;
+                  height: 50vh;}
+                  
+div.worldMapButton img{ 
+
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #cca92c;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  animation: pulse 2s infinite;
+}
+.pulse:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    scale: 1;
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      scale: 1.1;
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      scale: 1,4;
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+  /* layout fixing */
+  div.clear{   clear: both;}
+
+  /* animations*/
+  div.ContentHeader img{                  
+                        transition-property:  height, margin-top;
+                        transition-duration: 1s;}
+  div.imageLeft{animation: bobble1 2s infinite;}
+  div.imageMiddle{animation: bobble2 2.5s infinite;}
+  div.imageRight{animation: bobble3 1.5s infinite;}
+  @keyframes bobble1 {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+     
+    50% {
+        transform: translate3d(50px, 45px, 0px);
+        animation-timing-function: ease-out;
+    }
+     
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+  }
+  @keyframes bobble2 {
+    0% {
+        transform: translate3d(50px, 45px, 0px);
+        animation-timing-function: ease-in;
+    }
+     
+    50% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-out;
+    }
+     
+    100% {
+        transform: translate3d(50px, 45px, 0px);
+        animation-timing-function: ease-in;
+    }
+  }
+  @keyframes bobble3 {
+    0% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+     
+    50% {
+        transform: translate3d(50px, 45px, 0px);
+        animation-timing-function: ease-out;
+    }
+     
+    100% {
+        transform: translate3d(50px, 40px, 0px);
+        animation-timing-function: ease-in;
+    }
+  }
